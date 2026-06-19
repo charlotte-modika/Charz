@@ -1,40 +1,45 @@
-import socket
+# Hi, I'm Charlotte Modika 👋
 
-print("=== Simple Port Scanner ===")
+## About Me
+🔐 Aspiring Cybersecurity Analyst
 
-target = input("Enter target IP or website: ")
+🎓 Diploma in Policing (NQF Level 6)
 
-try:
-    target_ip = socket.gethostbyname(target)
+📚 Cisco Networking Academy Student
 
-    print(f"\nScanning {target_ip}...\n")
+💻 Learning Python, Networking, and Cybersecurity
 
-    common_ports = {
-        21: "FTP",
-        22: "SSH",
-        23: "Telnet",
-        25: "SMTP",
-        53: "DNS",
-        80: "HTTP",
-        110: "POP3",
-        143: "IMAP",
-        443: "HTTPS",
-        3306: "MySQL"
-    }
+📍 Pretoria, South Africa
 
-    for port in common_ports:
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.settimeout(1)
+## Certifications
+- Introduction to Cybersecurity
+- Networking Basics
+- Python Essentials 1
+- Foundational C#
+- Data Analyst
+- Microsoft Office 365
+- Administrative Professional
 
-        result = sock.connect_ex((target_ip, port))
+## Skills
+- Cybersecurity Fundamentals
+- Networking
+- Python Programming
+- Security Awareness
+- Problem Solving
+- Investigation & Analysis
+- Microsoft Office 365
 
-        if result == 0:
-            print(f"[OPEN] Port {port} - {common_ports[port]}")
+## Career Goals
+I am seeking opportunities in:
+- Cybersecurity
+- SOC Analysis
+- IT Support
+- Network Support
+- Information Security
 
-        sock.close()
+## Connect With Me
+LinkedIn:
+https://za.linkedin.com/in/charlotte-modika-40284b1b3
 
-except socket.gaierror:
-    print("Hostname could not be resolved.")
-
-except KeyboardInterrupt:
-    print("\nScan stopped.")
+Email:
+charlottemodikamokgadi@gmail.com
